@@ -1,13 +1,329 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Study Group Coordination</title>
-    <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudySync - Study Group Coordination</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to Study Group Coordination</h1>
-    <p>This website helps students form and manage study groups easily.</p>
+<header id="header">
+  <nav class="nav">
+    <div class="logo-container">
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%230099ff;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23ff00ff;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M 20 30 L 50 20 L 80 30 L 80 50 L 50 60 L 20 50 Z' fill='url(%23grad1)' /%3E%3Cpath d='M 20 55 L 50 65 L 80 55 L 80 75 L 50 85 L 20 75 Z' fill='url(%23grad1)' /%3E%3C/svg%3E" alt="StudySync Logo" class="logo-svg">
+      <h1>StudySync</h1>
+    </div>
+    <div class="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#create-form">Create Group</a>
+      <a href="#groups-table">Join Group</a>
+      <a href="#features">Features</a>
+      <a href="#footer">Contact</a>
+    </div>
+    <a href="#create-form" class="cta-button">Start Learning</a>
+  </nav>
+</header>
+
+<section id="hero">
+  <h2>Where Study Groups Thrive</h2>
+  <p>Collaborating Minds, Elevating Success Through Collective Learning</p>
+  <div class="hero-buttons">
+    <a href="#create-form">Get Started Free</a>
+    <a href="#features">Learn More</a>
+  </div>
+</section>
+
+<main>
+  <section id="stats">
+    <h3>StudySync By The Numbers</h3>
+    <div class="stats-grid">
+      <div class="stat-item">
+        <h4>5,000+</h4>
+        <p>Active Students</p>
+      </div>
+      <div class="stat-item">
+        <h4>850+</h4>
+        <p>Study Groups</p>
+      </div>
+      <div class="stat-item">
+        <h4>95%</h4>
+        <p>Success Rate</p>
+      </div>
+      <div class="stat-item">
+        <h4>24/7</h4>
+        <p>Support Available</p>
+      </div>
+      <div class="stat-item">
+        <h4>50K+</h4>
+        <p>Study Sessions</p>
+      </div>
+      <div class="stat-item">
+        <h4>120+</h4>
+        <p>Universities</p>
+      </div>
+      <div class="stat-item">
+        <h4>4.8★</h4>
+        <p>Average Rating</p>
+      </div>
+      <div class="stat-item">
+        <h4>88%</h4>
+        <p>Grade Improvement</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="popular-subjects">
+    <h3>Popular Study Subjects</h3>
+    <p class="section-intro">Explore the most active subject areas where students are collaborating and achieving success together.</p>
+    <div class="subjects-grid">
+      <div class="subject-card">
+        <h4>Computer Science</h4>
+        <p>Programming, Data Structures, Algorithms, Web Development, Machine Learning</p>
+        <span>245 Active Groups</span>
+      </div>
+      <div class="subject-card">
+        <h4>Mathematics</h4>
+        <p>Calculus, Linear Algebra, Statistics, Differential Equations, Discrete Math</p>
+        <span>189 Active Groups</span>
+      </div>
+      <div class="subject-card">
+        <h4>Natural Sciences</h4>
+        <p>Physics, Chemistry, Biology, Environmental Science, Astronomy</p>
+        <span>156 Active Groups</span>
+      </div>
+      <div class="subject-card">
+        <h4>Engineering</h4>
+        <p>Mechanical, Electrical, Civil, Chemical, Aerospace Engineering</p>
+        <span>132 Active Groups</span>
+      </div>
+      <div class="subject-card">
+        <h4>Business</h4>
+        <p>Economics, Finance, Marketing, Management, Entrepreneurship</p>
+        <span>98 Active Groups</span>
+      </div>
+      <div class="subject-card">
+        <h4>Humanities</h4>
+        <p>Literature, History, Philosophy, Art, Languages, Psychology</p>
+        <span>87 Active Groups</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h3>About StudySync</h3>
+    <p class="section-intro">Revolutionizing collaborative learning through technology-powered study group coordination. Connect with peers, share knowledge, and achieve academic excellence together.</p>
+    <div class="about-content">
+      <div class="about-text">
+        <h4>Our Mission</h4>
+        <p>At StudySync, we believe that learning is more effective when students collaborate, share knowledge, and support each other's academic journeys. Our platform makes it seamless to form study groups, coordinate sessions, and track collective progress.</p>
+        <p>Founded in 2023 by a team of educators and technology enthusiasts, StudySync has grown to serve thousands of students across universities worldwide. We're committed to making collaborative learning accessible, efficient, and enjoyable for everyone.</p>
+        <p>Whether you're tackling complex calculus problems, preparing for medical exams, or learning a new programming language, StudySync connects you with the right peers to maximize your learning potential.</p>
+      </div>
+      <div class="about-highlights">
+        <h5>Why Choose Us</h5>
+        <ul>
+          <li>AI-powered group matching based on learning styles and schedules</li>
+          <li>Integrated video conferencing and screen sharing tools</li>
+          <li>Comprehensive resource library with user-contributed materials</li>
+          <li>Progress tracking and performance analytics</li>
+          <li>24/7 technical support and community moderation</li>
+          <li>Free tier with essential features for all students</li>
+          <li>Mobile apps for iOS and Android devices</li>
+          <li>Secure, privacy-focused platform design</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="groups-table">
+    <h3>Active Study Groups</h3>
+    <p class="section-intro">Discover and join thriving study groups across diverse subjects. Find your perfect learning community today.</p>
+    <table>
+      <caption>Join an existing group today</caption>
+      <thead>
+        <tr>
+          <th>Group Name</th>
+          <th>Topic</th>
+          <th>Members</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Data Structures Warriors</td>
+          <td>Computer Science - Algorithms</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>Calculus Champions</td>
+          <td>Mathematics - Advanced Calculus</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>Physics Force</td>
+          <td>Physics - Quantum Mechanics</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>Code Crusaders</td>
+          <td>Web Development - Full Stack</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Biology Brigade</td>
+          <td>Biology - Molecular Biology</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Chemistry Collective</td>
+          <td>Organic Chemistry</td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td>Machine Learning Masters</td>
+          <td>AI and Deep Learning</td>
+          <td>18</td>
+        </tr>
+        <tr>
+          <td>Literature League</td>
+          <td>English Literature - Modern Poetry</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td>Economics Experts</td>
+          <td>Microeconomics and Macroeconomics</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td>Psychology Pioneers</td>
+          <td>Cognitive Psychology</td>
+          <td>13</td>
+        </tr>
+        <tr>
+          <td>History Buffs</td>
+          <td>World History - 20th Century</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>Art Appreciation Alliance</td>
+          <td>Art History and Theory</td>
+          <td>6</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="benefits">
+    <h3>Why StudySync Works</h3>
+    <p class="section-intro">Experience the power of collaborative learning with features designed to enhance your academic success.</p>
+    <ul class="benefits-list">
+      <li>
+        <h4>Share Resources</h4>
+        <p>Access a vast library of notes, videos, and study materials curated by your peers. Build a comprehensive knowledge base together with cloud storage integration.</p>
+      </li>
+      <li>
+        <h4>Schedule Meetings</h4>
+        <p>Coordinate study sessions with integrated calendar tools and automatic reminders. Never miss an important group session again with smart scheduling.</p>
+      </li>
+      <li>
+        <h4>Clarify Doubts</h4>
+        <p>Get instant help from group members who understand your coursework and challenges. Peer-to-peer learning at its finest with real-time messaging.</p>
+      </li>
+      <li>
+        <h4>Stay Motivated</h4>
+        <p>Keep each other accountable with progress tracking and milestone celebrations. Achieve your academic goals together with gamification features.</p>
+      </li>
+      <li>
+        <h4>Build Connections</h4>
+        <p>Network with like-minded students and form lasting academic friendships. Your study group becomes your support system for academic and personal growth.</p>
+      </li>
+      <li>
+        <h4>Track Progress</h4>
+        <p>Monitor your learning journey with detailed analytics and performance metrics. See your improvement over time with visual dashboards and reports.</p>
+      </li>
+      <li>
+        <h4>Flexible Learning</h4>
+        <p>Study at your own pace with asynchronous discussion forums and recorded sessions. Balance academics with other commitments effectively.</p>
+      </li>
+      <li>
+        <h4>Expert Guidance</h4>
+        <p>Access optional tutoring and mentorship programs. Connect with senior students and subject matter experts when you need extra support.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="features">
+    <h3>Powerful Features</h3>
+    <p class="section-intro">Cutting-edge technology meets intuitive design to create the ultimate study coordination platform.</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <h4>Real-Time Chat</h4>
+        <p>Communicate instantly with your group members through our integrated messaging system with rich media support</p>
+      </div>
+      <div class="feature-card">
+        <h4>File Sharing</h4>
+        <p>Upload and share study materials, notes, and resources securely within your group with version control</p>
+      </div>
+      <div class="feature-card">
+        <h4>Video Calls</h4>
+        <p>Host virtual study sessions with HD video conferencing and screen sharing capabilities for up to 50 participants</p>
+      </div>
+      <div class="feature-card">
+        <h4>Task Management</h4>
+        <p>Organize assignments, set deadlines, and track completion status for all group members with kanban boards</p>
+      </div>
+      <div class="feature-card">
+        <h4>Smart Scheduling</h4>
+        <p>AI-powered scheduling finds the perfect time slots that work for all group members across time zones</p>
+      </div>
+      <div class="feature-card">
+        <h4>Performance Analytics</h4>
+        <p>Visualize your learning progress with detailed charts and insights powered by data science algorithms</p>
+      </div>
+      <div class="feature-card">
+        <h4>Whiteboard Tools</h4>
+        <p>Collaborate on a shared digital whiteboard with drawing tools, equations, and diagrams in real-time</p>
+      </div>
+      <div class="feature-card">
+        <h4>Quiz Builder</h4>
+        <p>Create and share practice quizzes with your group members to test knowledge and prepare for exams</p>
+      </div>
+      <div class="feature-card">
+        <h4>Flashcard System</h4>
+        <p>Build collaborative flashcard decks with spaced repetition algorithms to optimize memory retention</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="study-tips">
+    <h3>Effective Study Strategies</h3>
+    <p class="section-intro">Proven techniques and best practices to maximize your study group effectiveness and academic performance.</p>
+    <div class="tips-grid">
+      <div class="tip-card">
+        <h4>Set Clear Goals</h4>
+        <p>Begin each study session with specific objectives. Define what topics you'll cover, what problems you'll solve, and what concepts you need to master. Clear goals keep everyone focused and productive.</p>
+      </div>
+      <div class="tip-card">
+        <h4>Active Participation</h4>
+        <p>Encourage all members to contribute. Teaching concepts to others reinforces your own understanding. Rotate who explains different topics to ensure everyone stays engaged.</p>
+      </div>
+      <div class="tip-card">
+        <h4>Regular Schedules</h4>
+        <p>Consistency is key. Establish regular meeting times that work for all members. This builds routine and ensures steady progress throughout the semester.</p>
+      </div>
+      <div class="tip-card">
+        <h4>Prepare Beforehand</h4>
+        <p>Come prepared with questions and materials. Review lecture notes before the session so group time can focus on difficult concepts rather than basic review.</p>
+      </div>
+      <div class="tip-card">
+        <h4>Take Breaks</h4>
+        <p>Use the Pomodoro technique: 25 minutes of focused study followed by 5-minute breaks. This maintains concentration and prevents burnout during long sessions.</p>
+      </div>
+      <div class="tip-card">
+        <h4>Share Resources</h4>
+        <p>Pool together notes, practice problems, and study materials. Different perspectives on the same material can provide valuable insights and deeper understanding.</p>
+      </div>
+    </div>
+  </section>
+</main>
 </body>
 </html>
